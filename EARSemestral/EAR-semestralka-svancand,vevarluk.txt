@@ -1,0 +1,32 @@
+Tým: Andrea Švancarová (svancand), Lukáš Vévar (vevarluk)
+Gitlab repo: https://gitlab.fel.cvut.cz/B201_B6B36EAR/vevarluk
+
+Téma semestrální práce: Covid-19 CRUD Knowledge graph
+
+Krátký popis:
+- Bude se jednat o backend znalostní databáze o koronaviru Covid-19. 
+Znalostní databáze bude zaměřena na popis nemoci Covid-19, možné příznaky, možné léčby, vědecké články o nemoci Covid-19,
+možnosti testování a případy nemocných.
+Důležitý bude důraz na správný ontologický popis informací (kategorie, souvislosti, každá kategorie bude mít své parametry)
+Konkrétní příklad informace:
+Kašel
+kategorie: příznak
+karátky popis: Pacienti si stěžují na suchý kašel, tedy ten, který dráždí na plicích, ale nemocný nic nevykašlává.
+procentuální výskyt u nakažených: 84%
+další v kategorii: Dušnost, Horečka
+Inspirace webem dbpedia.org a mzcr.cz
+
+- Hlavní funkce budou registrace, příhlášení, uživatelské role (návštěvník, editor, admin). Admin a editor mohou vkládat, mazat, editovat informace.
+Admin může udělovat a odebírat schopnost editor.
+Všichni i nepříhlášení uživatelé mohou zobrazit jakékoliv informace, mohou vytvářet dotazy na Knowledge graph.
+
+- Výsledný systém bude určen k dalšímu použití. Může se k němu v budoucnu udělat webový frontend. Mohl by sloužit
+i jako znalostní graf pro nějakého chatbota. Nebo jako veřejné API na strukturované informace o Covid-19.
+
+Další informace:
+- V systému bychom rádi vyzkoušeli místo klasické SQL databáze, grafovou databázi Neo4j. Dále bude používat framework Springboot a případně
+nějaké další pro zabezpečení pokud budou nutné. Mezi další případné funkce pomocí nějakých frameworků 
+by ještě šlo zařadit web scraping dat z internetu a nebo nějaké machine learning operace pro 
+práci s grafem (pokud by graf měl obsahovat spoustu informací, tak by bylo vhodné aby nalezení požadovaného výsledku bylo co přesnější)
+Proto by bylo vhodné aby systém byl dobře škálovatelný a optimalizovaný.
+
